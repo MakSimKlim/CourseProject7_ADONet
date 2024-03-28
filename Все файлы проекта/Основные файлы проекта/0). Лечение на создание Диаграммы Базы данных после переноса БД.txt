@@ -1,0 +1,6 @@
+SELECT name AS DB, SUSER_SNAME(owner_sid) AS owner FROM sys.databases
+
+USE CourseProjectADONet
+GO
+EXEC sp_changedbowner 'sa'
+GO
